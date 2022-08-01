@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Odin Project Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <div class="logo">
+          <h1 class="odin">ODIN</h1>
+          <img src="./imgs/odin-lined.png" alt="Odin project logo" />
+        </div>
+      </div>
+
+      <div class="right-side">
+        <p class="title">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+          labore eaque explicabo rem veritatis esse cumque nam, quibusdam
+          possimus architecto dignissimos cum dicta alias, quae voluptatem a,
+          itaque iste ab.
+        </p>
+        <form action="#" method="get">
+          <p>Let's do this!</p>
+          <fieldset>
+            <div class="input-part">
+              <label for="first-name">First Name<sup> *</sup></label>
+              <input
+                required
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="input-part">
+              <label for="last-name">Last Name<sup> *</sup></label>
+              <input
+                required
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="last Name"
+              />
+            </div>
+            <div class="input-part">
+              <label for="email">Email<sup> *</sup></label>
+              <input
+                required
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="input-part">
+              <label for="number">Phone number<sup> *</sup></label>
+              <input
+                required
+                type="number"
+                name="number"
+                id="number"
+                maxlength="1"
+                placeholder="Enter your mobile"
+              />
+            </div>
+            <div class="input-part">
+              <label for="password">Password<sup> *</sup></label>
+              <input
+                required
+                type="password"
+                name="password"
+                id="password"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8}$"
+                title="At least 1 Uppercase
+                At least 1 Lowercase
+                At least 1 Number
+                At least 1 Symbol, symbol allowed --> !@#$%^&*_=+-
+                Min 8 chars and Max 12 chars"
+                placeholder="Enter your Password"
+              />
+            </div>
+            <div class="input-part">
+              <label for="password">Confirm Password<sup> *</sup></label>
+              <input
+                required
+                type="password"
+                name="password"
+                id="confirm-password"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8}$"
+                title="At least 1 Uppercase
+                At least 1 Lowercase
+                At least 1 Number
+                At least 1 Symbol, symbol allowed --> !@#$%^&*_=+-
+                Min 8 chars and Max 12 chars"
+                placeholder="Confirm your Password"
+              />
+            </div>
+          </fieldset>
+          <button type="submit">Create Account</button>
+        </form>
+
+        <p class="footer">Alreay have an account? <a href="#">Log in</a></p>
+      </div>
+    </div>
+  </body>
+</html>
